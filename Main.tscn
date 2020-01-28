@@ -13,31 +13,33 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
-margin_right = 215.0
+margin_right = 300.0
 margin_bottom = 600.0
+rect_min_size = Vector2( 300, 0 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 0
 
 [node name="TagBox" type="ColorRect" parent="HBoxContainer/HBoxContainer"]
-margin_right = 215.0
-margin_bottom = 551.0
+margin_right = 300.0
+margin_bottom = 550.0
 rect_pivot_offset = Vector2( 200, 460 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 11.34
 
 [node name="ChatBox" type="ColorRect" parent="HBoxContainer/HBoxContainer"]
-margin_top = 551.0
-margin_right = 215.0
+margin_top = 550.0
+margin_right = 300.0
 margin_bottom = 600.0
+rect_min_size = Vector2( 0, 50 )
 rect_pivot_offset = Vector2( 200, 460 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 color = Color( 0.160784, 0.160784, 0.160784, 1 )
 
 [node name="PicBox" type="ColorRect" parent="HBoxContainer"]
-margin_left = 215.0
+margin_left = 300.0
 margin_right = 1024.0
 margin_bottom = 600.0
 rect_pivot_offset = Vector2( 200, 460 )
