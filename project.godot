@@ -19,6 +19,24 @@ config/name="E621ner"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
+[debug]
+
+settings/stdout/print_fps=true
+
+[physics]
+
+3d/active_soft_world=false
+2d/thread_model=2
+common/enable_object_picking=false
+
 [rendering]
 
+threads/thread_model=2
+quality/reflections/texture_array_reflections=false
+quality/reflections/high_quality_ggx=false
+quality/depth_prepass/enable=false
+quality/subsurface_scattering/quality=0
+quality/subsurface_scattering/weight_samples=false
+quality/voxel_cone_tracing/high_quality=false
+quality/depth/hdr=false
 environment/default_environment="res://default_env.tres"
