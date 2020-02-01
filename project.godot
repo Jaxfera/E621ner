@@ -19,10 +19,6 @@ config/name="E621ner"
 run/main_scene="res://Main.tscn"
 config/icon="res://icon.png"
 
-[debug]
-
-settings/stdout/print_fps=true
-
 [physics]
 
 3d/active_soft_world=false
