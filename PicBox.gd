@@ -3,6 +3,7 @@ extends TextureRect
 signal all_tags_found
 signal tag_found(tag)
 
+
 var tags := [
 	"hello",
 	"world",
@@ -11,13 +12,6 @@ var tags := [
 	"a",
 	"test"
 ]
-
-func _ready():
-	pass # Replace with function body.
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
 
 
 func _on_ChatBox_tag_input(tag):
