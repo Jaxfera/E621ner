@@ -1,12 +1,14 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://script/TagBox.gd" type="Script" id=1]
-[ext_resource path="res://script/ChatBox.gd" type="Script" id=2]
-[ext_resource path="res://placeholder.jpg" type="Texture" id=3]
-[ext_resource path="res://script/PicBox.gd" type="Script" id=4]
-[ext_resource path="res://script/TagsFoundLabel.gd" type="Script" id=5]
+[ext_resource path="res://Main.gdns" type="Script" id=1]
+[ext_resource path="res://script/TagBox.gd" type="Script" id=2]
+[ext_resource path="res://script/ChatBox.gd" type="Script" id=3]
+[ext_resource path="res://placeholder.jpg" type="Texture" id=4]
+[ext_resource path="res://script/PicBox.gd" type="Script" id=5]
+[ext_resource path="res://script/TagsFoundLabel.gd" type="Script" id=6]
 
 [node name="Main" type="Node"]
+script = ExtResource( 1 )
 
 [node name="MainLayout" type="HBoxContainer" parent="."]
 anchor_right = 1.0
@@ -41,7 +43,7 @@ margin_right = 300.0
 margin_bottom = 550.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
-script = ExtResource( 1 )
+script = ExtResource( 2 )
 
 [node name="ChatBox" type="TextEdit" parent="MainLayout/SidebarLayout"]
 margin_top = 550.0
@@ -52,7 +54,7 @@ rect_pivot_offset = Vector2( 200, 460 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 context_menu_enabled = false
-script = ExtResource( 2 )
+script = ExtResource( 3 )
 
 [node name="PicBox" type="TextureRect" parent="MainLayout"]
 margin_left = 300.0
@@ -62,10 +64,10 @@ rect_pivot_offset = Vector2( 200, 460 )
 size_flags_horizontal = 3
 size_flags_vertical = 3
 size_flags_stretch_ratio = 3.75
-texture = ExtResource( 3 )
+texture = ExtResource( 4 )
 expand = true
 stretch_mode = 1
-script = ExtResource( 4 )
+script = ExtResource( 5 )
 
 [node name="TagsFoundLabel" type="Label" parent="."]
 anchor_left = 1.0
@@ -79,7 +81,7 @@ custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
 custom_constants/shadow_as_outline = 0
 text = " 0 /  0 tags found"
 align = 2
-script = ExtResource( 5 )
+script = ExtResource( 6 )
 [connection signal="tag_input" from="MainLayout/SidebarLayout/ChatBox" to="MainLayout/PicBox" method="_on_ChatBox_tag_input"]
 [connection signal="text_changed" from="MainLayout/SidebarLayout/ChatBox" to="MainLayout/SidebarLayout/ChatBox" method="_on_ChatBox_text_changed"]
 [connection signal="ready" from="MainLayout/PicBox" to="TagsFoundLabel" method="_on_PicBox_ready"]
