@@ -1,10 +1,10 @@
 [gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://TagBox.gd" type="Script" id=1]
-[ext_resource path="res://ChatBox.gd" type="Script" id=2]
+[ext_resource path="res://script/TagBox.gd" type="Script" id=1]
+[ext_resource path="res://script/ChatBox.gd" type="Script" id=2]
 [ext_resource path="res://placeholder.jpg" type="Texture" id=3]
-[ext_resource path="res://PicBox.gd" type="Script" id=4]
-[ext_resource path="res://TagsFoundLabel.gd" type="Script" id=5]
+[ext_resource path="res://script/PicBox.gd" type="Script" id=4]
+[ext_resource path="res://script/TagsFoundLabel.gd" type="Script" id=5]
 
 [node name="Main" type="Node"]
 
@@ -83,5 +83,5 @@ script = ExtResource( 5 )
 [connection signal="tag_input" from="MainLayout/SidebarLayout/ChatBox" to="MainLayout/PicBox" method="_on_ChatBox_tag_input"]
 [connection signal="text_changed" from="MainLayout/SidebarLayout/ChatBox" to="MainLayout/SidebarLayout/ChatBox" method="_on_ChatBox_text_changed"]
 [connection signal="ready" from="MainLayout/PicBox" to="TagsFoundLabel" method="_on_PicBox_ready"]
-[connection signal="tag_found" from="MainLayout/PicBox" to="MainLayout/SidebarLayout/TagBoxScroller/TagBox" method="_on_PicBox_tag_found"]
 [connection signal="tag_found" from="MainLayout/PicBox" to="TagsFoundLabel" method="_on_PicBox_tag_found"]
+[connection signal="tag_found" from="MainLayout/PicBox" to="MainLayout/SidebarLayout/TagBoxScroller/TagBox" method="_on_PicBox_tag_found"]
