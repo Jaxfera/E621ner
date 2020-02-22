@@ -16,3 +16,5 @@ godot-cpp
 
 # Build stuff
 native-bin
+build
+bin
