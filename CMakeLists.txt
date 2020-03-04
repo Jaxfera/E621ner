@@ -7,7 +7,7 @@ if(CCACHE_PROGRAM)
     set_property(GLOBAL PROPERTY RULE_LAUNCH_COMPILE "${CCACHE_PROGRAM}")
 endif()
 
-add_subdirectory(godot-cpp)
+add_subdirectory(extern/godot-cpp)
 
 add_library(e621 SHARED native/E621.cpp)
 target_link_libraries(e621 godot-cpp)

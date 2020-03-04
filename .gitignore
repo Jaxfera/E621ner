@@ -12,6 +12,9 @@ export_presets.cfg
 data_*/
 
 # Build stuff
-native-bin
 build
 bin
+
+# Editor stuff
+.vscode
+

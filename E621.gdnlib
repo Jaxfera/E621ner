@@ -7,7 +7,7 @@ reloadable=true
 
 [entry]
 
-X11.64="res://native-bin/libe621.so"
+X11.64="res://build/libe621.so"
 
 [dependencies]
 
