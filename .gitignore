@@ -15,6 +15,13 @@ data_*/
 build
 bin
 
-# Editor stuff
+# Editor/IDE stuff
 .vscode
+.kdev4
+E621ner.kdev4
+
+# Ignore swap files
+*.swp
+*~swp
+*-swp
 

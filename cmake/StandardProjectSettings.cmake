@@ -22,6 +22,9 @@ endif()
 # tools
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
+# Anyone just wanting to compile shouldn't be enforced with this, seriously.
+set(WARNINGS_AS_ERRORS OFF)
+
 option(ENABLE_IPO
        "Enable Iterprocedural Optimization, aka Link Time Optimization (LTO)"
        OFF)

@@ -16,6 +16,7 @@ conan_add_remote(NAME bincrafters URL
 conan_cmake_run(
   REQUIRES
   ${CONAN_EXTRA_REQUIRES}
+  cpprestsdk/2.10.15@bincrafters/stable 
   OPTIONS
   ${CONAN_EXTRA_OPTIONS}
   BASIC_SETUP

@@ -4,12 +4,16 @@
 #include <Godot.hpp>
 #include <Reference.hpp>
 
+#include <curl/curl.h>
+
+
 extern "C"
 {
     void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o);
     void GDN_EXPORT godot_gdnative_terminate(godot_gdnative_terminate_options *o);
     void GDN_EXPORT godot_nativescript_init(void *handle);
 }
+
 
 class E621 : public godot::Reference
 {
