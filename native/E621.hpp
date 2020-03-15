@@ -4,9 +4,6 @@
 #include <Godot.hpp>
 #include <Reference.hpp>
 
-#include <curl/curl.h>
-
-
 extern "C"
 {
     void GDN_EXPORT godot_gdnative_init(godot_gdnative_init_options *o);
@@ -17,7 +14,7 @@ extern "C"
 
 class E621 : public godot::Reference
 {
-    GODOT_CLASS(E621, Reference);
+    GODOT_CLASS(E621, Reference)
 
 public:
     static void _register_methods();

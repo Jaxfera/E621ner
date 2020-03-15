@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>e621-Source@E621ner</name>
+	<comment></comment>
+	<projects></projects>
+	<buildSpec></buildSpec>
+	<natures></natures>
+	<linkedResources>
+		<link>
+			<name>[Subprojects]</name>
+			<type>2</type>
+			<locationURI>virtual:/virtual</locationURI>
+		</link>
+		<link>
+			<name>[Subprojects]/godot-cpp</name>
+			<type>2</type>
+			<location>/home/manu/Workspaces/Godot/E621ner/extern/godot-cpp</location>
+		</link>
+	</linkedResources>
+</projectDescription>
