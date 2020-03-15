@@ -25,3 +25,6 @@ E621ner.kdev4
 *~swp
 *-swp
 
+# Don't show api key
+native/E621_API_KEY.txt
+
