@@ -1,3 +1,6 @@
 [submodule "extern/godot-cpp"]
 	path = extern/godot-cpp
 	url = https://github.com/GodotNativeTools/godot-cpp.git
+[submodule "extern/curlpp"]
+	path = extern/curlpp
+	url = https://github.com/jpbarrette/curlpp
