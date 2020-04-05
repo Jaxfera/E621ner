@@ -82,6 +82,9 @@ custom_constants/shadow_as_outline = 0
 text = " 0 /  0 tags found"
 align = 2
 script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 [connection signal="tag_input" from="MainLayout/SidebarLayout/ChatBox" to="MainLayout/PicBox" method="_on_ChatBox_tag_input"]
 [connection signal="text_changed" from="MainLayout/SidebarLayout/ChatBox" to="MainLayout/SidebarLayout/ChatBox" method="_on_ChatBox_text_changed"]
 [connection signal="ready" from="MainLayout/PicBox" to="TagsFoundLabel" method="_on_PicBox_ready"]

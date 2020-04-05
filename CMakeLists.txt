@@ -33,4 +33,5 @@ include(cmake/Conan.cmake)
 run_conan()
 
 add_subdirectory(extern/godot-cpp)
+add_subdirectory(extern/curlpp)
 add_subdirectory(native)
